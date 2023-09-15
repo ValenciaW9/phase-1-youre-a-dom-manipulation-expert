@@ -1,5 +1,5 @@
 // Import any necessary testing dependencies or modules
-const { expect } = require('chai');
+const { expect } =  require ('chai');
 
 // Import the code to be tested
 const index = require('../index');
