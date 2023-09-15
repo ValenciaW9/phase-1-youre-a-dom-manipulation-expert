@@ -1,60 +1,44 @@
-console.log(gameObjext());
-{
-    home: {
-        teamName: "
-        colors: [ ]
-        plrayers: {
-            "Alan Anderson": {0},
-            "Reggie Evans": {30}
+function gameObject() {
+    return {
+      home: {
+        teamName: "Brooklyn Nets",
+        colors: ["Black", "White"],
+        players: {
+          "Alan Anderson": {
+            number: 0,
+            shoe: 16,
+            points: 22,
+            rebounds: 12,
+            assists: 12,
+            steals: 3,
+            blocks: 1,
+            slamDunks: 1
+          },
+          "Reggie Evans": {
+            number: 30,
+            shoe: 14,
+            points: 12,
+            rebounds: 12,
+            assists: 12,
+            steals: 12,
+            blocks: 12,
+            slamDunks: 7
+          }
         }
-    },
-    
-    'away': {
-      
+      },
+      away: {
+        teamName: "Charlotte Hornets",
+        colors: ["Turquoise", "Purple"],
+        players: {
+          // Add players for the away team here
+        }
       }
-   
-    }
-
-
-function homeTeaamName () {
-    let object = hameObject();
-    return object["home"]["teamName"];
-}
-
-console.log(homeTeamName());
-//logs "Brooklyn Nets"
-
-
-function homeTeaamName() {
+    };
+  }
+  
+  function homeTeamName() {
     return gameObject()["home"]["teamName"];
-}
-
-console.log(homeTeamName());
-// logs "Brooklyn Nets"
-
-
-
-
-
-
-//
-//
-///Part 1: Building the Object
-//The first function you will define is called gameObject. This function contains and returns an object nested in the following manner:
-
-//The top level of the object has two keys: "home", for the home team, and "away", for the away team.
-//The values of the "home" and "away" keys are objects too. These objects have the following keys:
-//"teamName"
-"colors"
-"players"
-The teamName key points to a string of the team name.
-The colors key points to an array of strings that are that team's colors.
-The players key points to an object of players whose names (as strings) are the keys to an object containing their stats. The values for each player's names and their stats can be found in the table below. The stats keys should be formatted like this:
-"number"
-"shoe"
-"points"
-"rebounds"
-"assists"
-"steals"
-"blocks"
-"slamDunks"
+  }
+  
+  console.log(homeTeamName());
+  // logs "Brooklyn Nets"
